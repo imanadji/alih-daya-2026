@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedah Tuntas Rezim Alih Daya (Outsourcing) Sektor Manufaktur - 55 Slide Eksekutif</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #0f172a;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: 1fr;
+      margin: 0;
+      min-height: 100vh;
+      padding: 30px 0;
+      place-items: center;
+      font-family: 'Inter', sans-serif;
+      color: #0f172a;
+    }
+    .slide-container {
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      padding: 44px 54px;
+      position: relative;
+    }
+
+    /* Bleed Layout Variant */
+    .slide-container.bleed-layout {
+      padding: 0;
+      display: grid;
+      grid-template-columns: 53% 47%;
+      background: #ffffff;
+    }
+    .bleed-content {
+      padding: 44px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      background: #ffffff;
+    }
+    .bleed-image-box {
+      width: 100%;
+      height: 720px;
+      overflow: hidden;
+      background: #f8fafc;
+      border-left: 1px solid #e2e8f0;
+    }
+    .bleed-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Header Components - High Legibility */
+    .slide-header {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .eyebrow {
+      font-size: 14px;
+      font-weight: 800;
+      color: #0284c7;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .slide-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 33px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.25;
+      border-left: 6px solid #0284c7;
+      padding-left: 16px;
+    }
+
+    /* Footer Indicator */
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      right: 48px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #64748b;
+    }
+
+    /* Content Area */
+    .content-area {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* Cards & Grids */
+    .card-row {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      align-items: stretch;
+    }
+    .card-item {
+      flex: 1 1 0;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 22px 24px;
+      border-top: 5px solid #0284c7;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-item.accent-gold { border-top-color: #d97706; }
+    .card-item.accent-red { border-top-color: #e11d48; }
+    .card-item.accent-emerald { border-top-color: #059669; }
+    .card-item.accent-indigo { border-top-color: #4f46e5; }
+
+    .card-item h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .card-item p {
+      font-size: 17px;
+      color: #334155;
+      line-height: 1.55;
+    }
+    .card-item ul {
+      padding-left: 20px;
+      color: #334155;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    .card-item li {
+      margin-bottom: 8px;
+    }
+
+    /* Metric Spotlight */
+    .metric-spotlight {
+      display: grid;
+      grid-template-columns: 34% 66%;
+      gap: 34px;
+      align-items: center;
+      width: 100%;
+    }
+    .metric-box {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      border: 2px solid #bae6fd;
+      border-radius: 16px;
+      padding: 34px 22px;
+      text-align: center;
+    }
+    .metric-number {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 74px;
+      font-weight: 800;
+      color: #0284c7;
+      line-height: 1;
+    }
+    .metric-label {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-top: 10px;
+    }
+
+    /* Tables */
+    .table-wrapper {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+    th {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 13px 18px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      text-align: left;
+      font-size: 16px;
+    }
+    td {
+      padding: 11px 18px;
+      border-top: 1px solid #e2e8f0;
+      color: #1e293b;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+    td strong {
+      color: #0f172a;
+    }
+
+    /* Styled Bullet List */
+    .styled-list {
+      list-style: none;
+      width: 100%;
+    }
+    .styled-list li {
+      position: relative;
+      padding-left: 36px;
+      font-size: 17px;
+      color: #1e293b;
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+    .styled-list li i {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      color: #0284c7;
+      font-size: 19px;
+    }
+
+    /* Timeline Process */
+    .timeline-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      margin-top: 14px;
+    }
+    .timeline-row::before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: 40px;
+      right: 40px;
+      height: 4px;
+      background: #cbd5e1;
+      z-index: 0;
+    }
+    .timeline-step {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 22%;
+    }
+    .step-circle {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #0284c7;
+      color: #ffffff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px auto;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+    }
+    .step-content {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 15px 14px;
+    }
+    .step-content h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 17px;
+      color: #0f172a;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .step-content p {
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.45;
+    }
+  </style>
+  <style>
+    .slide-container.slide-attributions .attribution-safe-zone {
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      overflow-y: auto;
+    }
+    .attribution-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .attribution-list__item {
+      align-items: center;
+      border-bottom: 1px solid #cbd5e1;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 80px 1fr;
+      padding: 12px 0;
+    }
+    .attribution-list__item .attribution__thumbnail {
+      height: 48px;
+      width: 80px;
+    }
+    .attribution-list__item .attribution__thumbnail img {
+      border-radius: 6px;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- SLIDE 1: COVER SLIDE (WHITE BACKGROUND) -->
+<div class="slide-container" id="slide1">
+  <div class="content-area" style="text-align:center; align-items:center;">
+    <span style="background:#e0f2fe; color:#0369a1; border:1px solid #bae6fd; padding:8px 24px; border-radius:30px; font-size:14px; font-weight:800; letter-spacing:1.5px; margin-bottom:20px; display:inline-block;">
+      SPECIAL EXECUTIVE BRIEFING: SEKTOR INDUSTRI MANUFAKTUR
+    </span>
+    <h1 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:44px; font-weight:800; color:#0f172a; line-height:1.2; max-width:1100px; margin-bottom:16px;">
+      Bedah Tuntas Rezim Alih Daya (Outsourcing) Manufaktur
+    </h1>
+    <p style="font-size:20px; color:#475569; max-width:960px; line-height:1.6; margin-bottom:28px;">
+      Analisis Komparatif Tripartit: UU Cipta Kerja No. 6/2023, Permenaker No. 7 Tahun 2026, dan Draft RUU Pelindungan Ketenagakerjaan Pasca Putusan MK No. 168/PUU-XXI/2023
+    </p>
+    <div style="border-top:2px solid #e2e8f0; width:820px; padding-top:20px; display:flex; justify-content:space-around; color:#334155; font-size:16px; font-weight:600;">
+      <span><i class="fa-solid fa-industry" style="color:#0284c7; margin-right:8px;"></i> Fokus Lini Pabrik Manufaktur</span>
+      <span><i class="fa-solid fa-scale-balanced" style="color:#0284c7; margin-right:8px;"></i> Harmonisasi Baleg DPR & Kemenaker</span>
+      <span><i class="fa-solid fa-book-bookmark" style="color:#0284c7; margin-right:8px;"></i> 55 Slide Komprehensif + 9 Lampiran</span>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 1 / 55</span>
+</div>
+
+<!-- SLIDE 2: AGENDA & KERANGKA PEMBAHASAN -->
+<div class="slide-container" id="slide2">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-list-ol"></i> Executive Roadmap</div>
+    <h2 class="slide-title">Struktur Agenda Pembahasan Eksekutif</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-landmark" style="color:#0284c7;"></i> Bagian I & II</h3>
+        <p style="font-weight:700; color:#0f172a; margin-bottom:6px;">Evolusi & Komparasi Regulasi</p>
+        <p>Kronologi 4 rezim alih daya, Putusan MK 168, serta komparasi tajam Permenaker 7/2026 vs Draft RUU Ketenagakerjaan.</p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-book-bookmark" style="color:#d97706;"></i> Bagian III & IV</h3>
+        <p style="font-weight:700; color:#0f172a; margin-bottom:6px;">Bedah Pasal 80 - 83 RUU</p>
+        <p>Restriksi 5 rumpun penunjang, sanksi alih status PKWTT otomatis, eksekusi Nota Pengawas ke PN, dan prinsip TUPE.</p>
+      </div>
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-gears" style="color:#e11d48;"></i> Bagian V & VI</h3>
+        <p style="font-weight:700; color:#0f172a; margin-bottom:6px;">Audit Pabrik & Risiko Finansial</p>
+        <p>Pemetaan alur mesin (core vs non-core), simulasi liabilitas back-pay, serta protokol pemisahan komando kerja.</p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-folder-open" style="color:#059669;"></i> Bagian VII & VIII</h3>
+        <p style="font-weight:700; color:#0f172a; margin-bottom:6px;">9 Lampiran & Rekomendasi</p>
+        <p>Checklist due diligence vendor, klausul kontrak B2B, SOP pengawas, SLA output, dan roadmap aksi dewan direksi.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 2 / 55</span>
+</div>
+
+<!-- SLIDE 3: EVOLUSI 4 REZIM HUKUM ALIH DAYA -->
+<div class="slide-container" id="slide3">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-timeline"></i> Latar Belakang Regulasi</div>
+    <h2 class="slide-title">Kronologi & Evolusi Rezim Alih Daya di Indonesia</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-file-shield" style="color:#0284c7;"></i> UU No. 13/2003</h3>
+        <p>Membatasi kaku alih daya pada 5 jasa penunjang (cleaning, security, catering, driver, tambang). Memisahkan pemborongan pekerjaan dan penyediaan jasa pekerja.</p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-bolt" style="color:#d97706;"></i> UU No. 6/2023</h3>
+        <p>Menghapus rincian 5 bidang penunjang di UU dan mendelegasikannya ke PP 35/2021, memicu kaburnya batasan inti produksi di ratusan pabrik manufaktur.</p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-stamp" style="color:#059669;"></i> Permenaker 7/2026</h3>
+        <p>Terbit 30 April 2026: Mengunci 6 bidang penunjang, mewajibkan pencatatan 3 hari ke Disnaker, serta sanksi pembatasan kuota kapasitas produksi bagi pabrik.</p>
+      </div>
+      <div class="card-item accent-indigo">
+        <h3><i class="fa-solid fa-gavel" style="color:#4f46e5;"></i> Draft RUU Pasca-MK 168</h3>
+        <p>Rekodifikasi UU: Mengembalikan sanksi alih status otomatis demi hukum menjadi karyawan tetap User (Pasal 81) via pengesahan Pengadilan Negeri.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 3 / 55</span>
+</div>
+
+<!-- SLIDE 4: PUTUSAN MK 168 - BLEED LAYOUT -->
+<div class="slide-container bleed-layout" id="slide4">
+  <div class="bleed-content">
+    <div class="eyebrow"><i class="fa-solid fa-landmark"></i> Mahkamah Konstitusi RI</div>
+    <h2 class="slide-title" style="font-size:30px; margin-bottom:16px;">Mandat Pengembalian Pembatasan Alih Daya</h2>
+    <p style="font-size:18px; color:#334155; line-height:1.6; margin-bottom:16px;">
+      Putusan MK No. 168/PUU-XXI/2023 menegaskan bahwa penyerahan klausul alih daya secara terbuka tanpa batas di tingkat UU menimbulkan ketidakpastian hukum dan melanggar Pasal 28D ayat (2) UUD 1945.
+    </p>
+    <ul class="styled-list">
+      <li><i class="fa-solid fa-circle-exclamation"></i> <strong>Larangan Komodifikasi Buruh:</strong> Pekerjaan yang berkaitan langsung dengan proses produksi dilarang dikontrakkan ke vendor alih daya.</li>
+      <li><i class="fa-solid fa-shield-halved"></i> <strong>Kekuatan Eksekutorial:</strong> Penetapan pelanggaran jenis pekerjaan harus dapat dieksekusi langsung demi melindungi hak pekerja.</li>
+      <li><i class="fa-solid fa-clock"></i> <strong>Batas Waktu Legislasi:</strong> DPR dan Presiden diberi waktu paling lama 2 tahun membentuk UU Ketenagakerjaan mandiri.</li>
+    </ul>
+  </div>
+  <div class="bleed-image-box">
+    <img src="https://geopolstratindo.com/wp-content/uploads/2024/04/Konstitusi.jpg" alt="Gedung Mahkamah Konstitusi Republik Indonesia">
+  </div>
+  <span class="slide-footer">Slide 4 / 55</span>
+</div>
+
+<!-- SLIDE 5: MATRIKS KOMPARASI 4 REZIM HUKUM -->
+<div class="slide-container" id="slide5">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-table-columns"></i> Perbandingan Regulasi</div>
+    <h2 class="slide-title">Matriks Komparasi 4 Rezim Hukum Alih Daya</h2>
+  </div>
+  <div class="content-area">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Parameter Hukum</th>
+            <th>UU Cipta Kerja (UU 6/2023)</th>
+            <th>Permenaker No. 7 Tahun 2026</th>
+            <th>Draft RUU Ketenagakerjaan (Baleg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Penetapan Objek</strong></td>
+            <td>Didelegasikan ke PP 35/2021</td>
+            <td>Dibatasi pada 6 bidang penunjang</td>
+            <td><strong>Dibatasi kaku di UU (Pasal 80)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Lini Operasional</strong></td>
+            <td>Bebas ditentukan perusahaan</td>
+            <td>Mencantumkan penunjang operasional</td>
+            <td><strong>Mutlak dilarang di lini produksi</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Sanksi Pelanggaran</strong></td>
+            <td>Gugatan PHI tanpa alih status otomatis</td>
+            <td>Peringatan & pembatasan kapasitas pabrik</td>
+            <td><strong>Demi hukum menjadi karyawan tetap User</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Pencatatan Kontrak</strong></td>
+            <td>Pelaporan berkala normatif</td>
+            <td>Wajib lapor Disnaker H+3 hari kerja</td>
+            <td>Wajib daring terintegrasi pengawas</td>
+          </tr>
+          <tr>
+            <td><strong>Masa Kerja Vendor</strong></td>
+            <td>Kerap di-reset saat pergantian vendor</td>
+            <td>Tanggung jawab pemenuhan hak normatif</td>
+            <td><strong>Akumulasi masa kerja kumulatif TUPE</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 5 / 55</span>
+</div>
+
+<!-- SLIDE 6: ASAS HIERARKI HUKUM (LEX SUPERIOR DEROGAT LEGI INFERIORI) -->
+<div class="slide-container" id="slide6">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-scale-unbalanced-flip"></i> Doktrin Hukum Tata Negara</div>
+    <h2 class="slide-title">Konflik Hierarki: Permenaker 7/2026 vs Draft RUU</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item" style="flex:1.1;">
+        <h3><i class="fa-solid fa-gavel" style="color:#0284c7;"></i> Doktrin Lex Superior Derogat Legi Inferiori</h3>
+        <p style="margin-bottom:12px;">
+          Berdasarkan UU No. 12/2011 jo. UU No. 13/2022 tentang Pembentukan Peraturan Perundang-undangan, norma Undang-Undang memiliki derajat hierarki yang lebih tinggi daripada Peraturan Menteri (Permenaker).
+        </p>
+        <p style="background:#ffffff; border-left:4px solid #0284c7; padding:12px; border-radius:6px; font-weight:600; color:#0369a1;">
+          Konsekuensi: Apabila Draft RUU Pelindungan Ketenagakerjaan disahkan, seluruh klausul Permenaker No. 7 Tahun 2026 yang bertentangan atau lebih longgar gugur demi hukum.
+        </p>
+      </div>
+      <div class="card-item accent-red" style="flex:0.9;">
+        <h3><i class="fa-solid fa-triangle-exclamation" style="color:#e11d48;"></i> Jebakan Kepatuhan Manajemen</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-ban"></i> <strong>Zona Ilusi Aman:</strong> Pabrik yang hanya mematuhi Permenaker 7/2026 tetap berisiko terkena sanksi alih status RUU.</li>
+          <li><i class="fa-solid fa-bolt"></i> <strong>Klausul Abu-abu Permenaker:</strong> Poin "Penunjang Operasional" di Permenaker tidak diakui dalam RUU.</li>
+          <li><i class="fa-solid fa-shield-xmark"></i> <strong>Disparitas Sanksi:</strong> Permenaker mengenakan sanksi kuota izin, sedangkan UU mengikat langsung perikatan kerja perorangan buruh.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 6 / 55</span>
+</div>
+
+<!-- SLIDE 7: BEDAH PERMENAKER NO 7 TAHUN 2026 -->
+<div class="slide-container" id="slide7">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-stamp"></i> Ketentuan Permenaker Baru</div>
+    <h2 class="slide-title">Pokok-Pokok Permenaker No. 7 Tahun 2026</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-calendar-day" style="color:#0284c7;"></i> Waktu & Tanggung Jawab</h3>
+        <p>
+          Diundangkan tanggal <strong>30 April 2026</strong>. Menegaskan Perusahaan Pemberi Pekerjaan (User) bertanggung jawab memastikan vendor alih daya memenuhi seluruh hak normatif buruh tanpa kompromi.
+        </p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-id-card-clip" style="color:#d97706;"></i> Bentuk Badan Hukum Sah</h3>
+        <p>
+          Pasal 2 & 3 menegaskan perusahaan alih daya <strong>wajib berbentuk Perseroan Terbatas (PT)</strong> berbadan hukum. Tidak dapat dijalankan perseorangan, CV, ataupun persekutuan perdata.
+        </p>
+      </div>
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-file-arrow-up" style="color:#e11d48;"></i> Batas Pelaporan 3 Hari</h3>
+        <p>
+          Pasal 6 ayat (1) mewajibkan pencatatan Perjanjian Alih Daya kepada Disnaker kabupaten/kota setempat paling lambat <strong>3 (tiga) hari kerja</strong> sejak perjanjian ditandatangani.
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 7 / 55</span>
+</div>
+
+<!-- SLIDE 8: KOMPARASI 6 BIDANG PERMENAKER VS 5 RUMPUN RUU -->
+<div class="slide-container" id="slide8">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-list-check"></i> Klasifikasi Bidang Pekerjaan</div>
+    <h2 class="slide-title">6 Bidang Permenaker 7/2026 vs 5 Rumpun RUU</h2>
+  </div>
+  <div class="content-area">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>6 Bidang Penunjang Permenaker 7/2026 (Pasal 3)</th>
+            <th>5 Rumpun Jasa Penunjang RUU (Pasal 80 ayat 3)</th>
+            <th>Dampak Hukum bagi Pabrik Manufaktur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Layanan Kebersihan (Cleaning Service)</td>
+            <td>Usaha Pelayanan Kebersihan</td>
+            <td><strong style="color:#059669;">Aman (Sah 100%)</strong>: Area kantor, sanitasi umum pabrik.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Penyediaan Makanan dan Minuman</td>
+            <td>Usaha Penyediaan Makanan Pekerja</td>
+            <td><strong style="color:#059669;">Aman (Sah 100%)</strong>: Kantin & katering shift pabrik.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pengamanan (Security)</td>
+            <td>Usaha Satuan Pengamanan</td>
+            <td><strong style="color:#059669;">Aman (Sah 100%)</strong>: Pos gerbang & patroli perimeter pabrik.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Penyediaan Pengemudi & Angkutan</td>
+            <td>Usaha Penyediaan Angkutan Pekerja</td>
+            <td><strong style="color:#059669;">Aman (Sah 100%)</strong>: Shuttle bus jemputan karyawan shift.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Pekerjaan Penunjang Tambang, Migas, Listrik</td>
+            <td>Jasa Penunjang Pertambangan & Perminyakan</td>
+            <td><strong style="color:#059669;">Aman (Sah)</strong>: Utilitas penunjang energi fasilitas.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><strong>Layanan Penunjang Operasional</strong></td>
+            <td><strong style="color:#e11d48;">TIDAK ADA DALAM RUU</strong></td>
+            <td><strong style="color:#e11d48;">ZONA MERAH</strong>: Rawan digugat jadi karyawan tetap!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 8 / 55</span>
+</div>
+
+<!-- SLIDE 9: ANALISIS CELAH "PENUNJANG OPERASIONAL" -->
+<div class="slide-container" id="slide9">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-magnifying-glass-chart"></i> Analisis Yuridis Mendalam</div>
+    <h2 class="slide-title">Anatomi Kerentanan: Celah "Penunjang Operasional"</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-stamp" style="color:#d97706;"></i> Penafsiran Permenaker 7/2026</h3>
+        <p style="margin-bottom:10px;">
+          Permenaker menambahkan rumpun ke-6: <em>"Layanan penunjang operasional"</em> yang kerap ditafsirkan manajemen pabrik untuk melegitimasi operator packing sekunder, forklift warehouse, dan data entry logistik.
+        </p>
+        <p style="font-size:15px; color:#64748b;">
+          Di mata dinas daerah, posisi ini dapat dicatatkan selama tidak mengoperasikan mesin transformasi bahan baku utama.
+        </p>
+      </div>
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-ban" style="color:#e11d48;"></i> Sikap Tegas RUU Ketenagakerjaan</h3>
+        <p style="margin-bottom:10px;">
+          Draft RUU Baleg <strong>menghapus total frasa penunjang operasional</strong>. Pasal 80 ayat (2) mengunci: <em>"harus merupakan kegiatan jasa penunjang atau yang tidak berhubungan langsung dengan proses produksi."</em>
+        </p>
+        <p style="font-size:15px; color:#be123c; font-weight:700;">
+          Risiko: Pekerja penunjang operasional Permenaker berpotensi menuntut alih status PKWTT User begitu UU disahkan!
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 9 / 55</span>
+</div>
+
+<!-- SLIDE 10: SANKSI: PEMBATASAN KAPASITAS PABRIK VS ALIH STATUS -->
+<div class="slide-container" id="slide10">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-triangle-exclamation"></i> Konsekuensi Yuridis</div>
+    <h2 class="slide-title">Sanksi: Pembatasan Produksi vs Alih Status Tetap</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-industry" style="color:#d97706;"></i> Sanksi Permenaker No. 7/2026 (Pasal 8)</h3>
+        <p style="margin-bottom:12px;">
+          Pemberi kerja yang melanggar ketentuan jenis bidang alih daya dikenakan sanksi bertahap dari Kemenaker/Disnaker:
+        </p>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-circle-exclamation"></i> Peringatan tertulis resmi dari pegawai pengawas ketenagakerjaan.</li>
+          <li><i class="fa-solid fa-ban"></i> <strong>Pembatasan kapasitas produksi barang/jasa</strong> pabrik secara kuota.</li>
+          <li><i class="fa-solid fa-clock"></i> Penundaan pemberian perizinan berusaha ekspansi cabang pabrik baru.</li>
+        </ul>
+      </div>
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-gavel" style="color:#e11d48;"></i> Sanksi Draft RUU Ketenagakerjaan (Pasal 81)</h3>
+        <p style="margin-bottom:12px;">
+          Konsekuensi hukum di tingkat undang-undang bersifat <strong>otomatis dan eksekutorial langsung</strong>:
+        </p>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-bolt"></i> <strong>Demi hukum beralih status</strong> menjadi karyawan tetap User (PKWTT).</li>
+          <li><i class="fa-solid fa-landmark"></i> Pengesahan nota pengawas langsung ke Pengadilan Negeri setempat.</li>
+          <li><i class="fa-solid fa-receipt"></i> Tuntutan rapelan gaji & tunjangan tetap (*back-pay*) seketika.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 10 / 55</span>
+</div>
+
+<!-- SLIDE 11: MASA TRANSISI 2 TAHUN PERMENAKER 7/2026 -->
+<div class="slide-container" id="slide11">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-hourglass-half"></i> Batas Penyesuaian</div>
+    <h2 class="slide-title">Masa Transisi Penyesuaian: Deadline 30 April 2028</h2>
+  </div>
+  <div class="content-area">
+    <div class="metric-spotlight">
+      <div class="metric-box">
+        <div class="metric-number">24</div>
+        <div class="metric-label">Bulan Masa Penyesuaian Kontrak Pabrik</div>
+      </div>
+      <div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; color:#0f172a; margin-bottom:12px;">
+          Pasal 10 huruf b Permenaker No. 7 Tahun 2026
+        </h3>
+        <p style="font-size:18px; color:#334155; line-height:1.6; margin-bottom:14px;">
+          Kontrak alih daya yang sudah berjalan tetap berlaku sah sampai berakhirnya masa kontrak, dengan kewajiban penyesuaian jenis pekerjaan paling lambat <strong>2 (dua) tahun sejak 30 April 2026</strong>.
+        </p>
+        <div style="background:#fef2f2; border-left:5px solid #e11d48; padding:14px 18px; border-radius:8px;">
+          <strong style="color:#be123c; font-size:17px;">Peringatan bagi Manajemen Pabrik:</strong>
+          <p style="font-size:16px; color:#475569; margin:4px 0 0 0;">
+            Menunda restrukturisasi hingga 2028 sangat berisiko karena jika RUU Pelindungan Ketenagakerjaan disahkan lebih awal, ketentuan alih status otomatis Pasal 81 UU dapat mendahului masa transisi Permenaker!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 11 / 55</span>
+</div>
+
+<!-- SLIDE 12: KEWAJIBAN PENCATATAN 3 HARI DISNAKER -->
+<div class="slide-container" id="slide12">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-file-signature"></i> Kepatuhan Administratif</div>
+    <h2 class="slide-title">Kewajiban Pencatatan Kontrak ke Disnaker (Permenaker 7/2026)</h2>
+  </div>
+  <div class="content-area">
+    <div class="metric-spotlight">
+      <div class="metric-box">
+        <div class="metric-number">H+3</div>
+        <div class="metric-label">Batas Hari Kerja Pelaporan Kontrak</div>
+      </div>
+      <div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; color:#0f172a; margin-bottom:12px;">
+          Pasal 6 ayat (1) huruf b Permenaker No. 7 Tahun 2026
+        </h3>
+        <p style="font-size:18px; color:#334155; line-height:1.6; margin-bottom:12px;">
+          Perusahaan alih daya <strong>wajib mencatatkan Perjanjian Alih Daya</strong> kepada dinas yang menyelenggarakan urusan pemerintahan di bidang ketenagakerjaan kabupaten/kota tempat pekerjaan dilaksanakan paling lambat <strong>3 (tiga) hari kerja</strong> sejak perjanjian ditandatangani.
+        </p>
+        <p style="font-size:16px; color:#0369a1; font-weight:600; background:#f0f9ff; padding:12px 16px; border-radius:8px;">
+          Kegagalan pencatatan dapat mengakibatkan sanksi administratif dan membatalkan keabsahan penyerahan pekerjaan alih daya di mata pengawas pabrik.
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 12 / 55</span>
+</div>
+
+<!-- SLIDE 13: SISTEM PENCATATAN ONLINE RUU (PASAL 76 AYAT 3) -->
+<div class="slide-container" id="slide13">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-network-wired"></i> Sistem Digitalisasi Ketenagakerjaan</div>
+    <h2 class="slide-title">Pencatatan Daring & Keterbukaan Pengawas (RUU)</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-laptop-code" style="color:#0284c7;"></i> Integrasi Sistem Online Terpusat</h3>
+        <p>
+          Pasal 76 ayat (3) RUU mewajibkan pencatatan kontrak kerja melalui portal daring Kemenaker paling lambat 3 hari kerja, menghilangkan praktik manipulasi dokumen fisik di tingkat kabupaten/kota.
+        </p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-eye" style="color:#d97706;"></i> Akses Terbuka Pegawai Pengawas</h3>
+        <p>
+          Pasal 76 ayat (4) RUU menegaskan kontrak daring dapat diakses langsung secara *real-time* oleh Pegawai Pengawas Ketenagakerjaan Pusat dan serikat pekerja/buruh.
+        </p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-file-shield" style="color:#059669;"></i> Alat Bukti Otentik Persidangan</h3>
+        <p>
+          Data dalam sistem daring menjadi bukti mutlak dalam penetapan sanksi alih status otomatis di Pengadilan Negeri tanpa perdebatan tanggal mundur (*backdating*).
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 13 / 55</span>
+</div>
+
+<!-- SLIDE 14: STANDARISASI LEGALITAS VENDOR (PT & OSS) -->
+<div class="slide-container" id="slide14">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-building-circle-check"></i> Standardisasi Vendor</div>
+    <h2 class="slide-title">Legalitas Ketat Vendor Alih Daya (Pasal 82 Ayat 5)</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-landmark" style="color:#0284c7;"></i> Wajib Berbadan Hukum PT</h3>
+        <p>
+          Vendor alih daya wajib berbentuk Perseroan Terbatas (PT) berbadan hukum Indonesia. CV, persekutuan perdata, atau koperasi dilarang menjadi penyedia tenaga kerja.
+        </p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-certificate" style="color:#d97706;"></i> Izin Berusaha OSS Pusat</h3>
+        <p>
+          Perizinan berusaha wajib diterbitkan langsung melalui sistem OSS Pemerintah Pusat sesuai norma standar Kemenaker, bukan izin lokal yang belum terverifikasi.
+        </p>
+      </div>
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-handshake-angle" style="color:#e11d48;"></i> Tanggung Renteng User</h3>
+        <p>
+          Jika User menggunakan vendor tanpa izin resmi yang sah, User dapat dimintai pertanggungjawaban hukum langsung atas seluruh hak normatif buruh vendor.
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 14 / 55</span>
+</div>
+
+<!-- SLIDE 15: STRUKTUR & SKALA UPAH VENDOR (PASAL 82 AYAT 6) -->
+<div class="slide-container" id="slide15">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-file-invoice-dollar"></i> Remunerasi Karyawan Vendor</div>
+    <h2 class="slide-title">Wajib Struktur & Skala Upah pada Perusahaan Vendor</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-bars-progress" style="color:#0284c7;"></i> Variabel Penetapan Upah</h3>
+        <p>
+          Vendor wajib menyusun struktur skala upah dengan mempertimbangkan produktivitas, golongan jabatan, masa kerja, pendidikan, dan sertifikasi keahlian.
+        </p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-ban" style="color:#d97706;"></i> Larangan Upah Pukul Rata</h3>
+        <p>
+          Pekerja vendor alih daya dengan masa kerja di atas 1 tahun di pabrik tidak boleh lagi hanya digaji setara upah minimum (UMP/UMK) flat bersama buruh pemula.
+        </p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-magnifying-glass-dollar" style="color:#059669;"></i> Due Diligence User</h3>
+        <p>
+          Manajemen pabrik wajib memeriksa salinan struktur skala upah vendor saat proses lelang (*tender pricing*) untuk memastikan kepatuhan hukum upah.
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 15 / 55</span>
+</div>
+
+<!-- SLIDE 16: SECTION TITLE - BEDAH PASAL 80 - 83 DRAFT RUU -->
+<div class="slide-container" id="slide16" style="text-align:center; align-items:center;">
+  <div class="content-area" style="max-width:900px;">
+    <span class="eyebrow" style="justify-content:center;"><i class="fa-solid fa-book-open"></i> Modul 3: Analisis Yuridis RUU</span>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:42px; font-weight:800; color:#0f172a; margin:16px 0;">
+      Bedah Mendalam Batang Tubuh Pasal 80 s.d. 83 RUU Pelindungan Ketenagakerjaan
+    </h2>
+    <p style="font-size:19px; color:#475569; line-height:1.6;">
+      Eksplorasi pembatasan kaku objek pekerjaan penunjang, doktrin perikatan hukum, mekanisme eksekutorial instan di Pengadilan Negeri, serta perlindungan TUPE berkelanjutan.
+    </p>
+  </div>
+  <span class="slide-footer">Slide 16 / 55</span>
+</div>
+
+<!-- SLIDE 17: PASAL 80 - ANATOMI BATASAN YURIDIS -->
+<div class="slide-container" id="slide17">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-book-bookmark"></i> Bedah Batang Tubuh RUU</div>
+    <h2 class="slide-title">Pasal 80: Batasan Mutlak Penyerahan Pekerjaan</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item" style="flex:1.2;">
+        <h3><i class="fa-solid fa-scale-balanced" style="color:#0284c7;"></i> Teks Yuridis Pasal 80 RUU</h3>
+        <p style="font-size:17px; line-height:1.6; background:#ffffff; border:1px solid #cbd5e1; padding:16px; border-radius:8px; margin-bottom:12px;">
+          <em>"Perusahaan dapat menyerahkan sebagian pelaksanaan pekerjaan kepada Perusahaan lainnya melalui perjanjian alih daya yang dibuat secara tertulis. Jenis dan bidang pekerjaan alih daya harus merupakan kegiatan jasa penunjang atau yang tidak berhubungan langsung dengan proses produksi."</em>
+        </p>
+        <p style="font-size:16px; color:#475569;">
+          Pasal 80 ayat (1) dan (2) meniadakan celah bagi pabrik untuk mengontrakkan operator lini manufaktur langsung.
+        </p>
+      </div>
+      <div class="card-item accent-gold" style="flex:0.8;">
+        <h3><i class="fa-solid fa-magnifying-glass" style="color:#d97706;"></i> 3 Prinsip Uji Non-Core</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Terpisah dari Aliran Produksi:</strong> Penghentian pekerjaan tidak menghentikan mesin utama.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Sifat Melayani Umum:</strong> Menunjang kelancaran fasilitas lingkungan pabrik.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Perjanjian Tertulis Resmi:</strong> Diikat dalam kontrak legal antar-PT berbadan hukum.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 17 / 55</span>
+</div>
+
+<!-- SLIDE 18: 5 RUMPUN JASA PENUNJANG LEGAL PASAL 80 AYAT 3 -->
+<div class="slide-container" id="slide18">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-shield-halved"></i> Ruang Lingkup Legal</div>
+    <h2 class="slide-title">5 Rumpun Jasa Penunjang Sah (Pasal 80 Ayat 3 RUU)</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row" style="flex-wrap:wrap;">
+      <div class="card-item" style="flex:1 1 30%;">
+        <h3><i class="fa-solid fa-broom" style="color:#0284c7;"></i> 1. Kebersihan Pabrik</h3>
+        <p>Cleaning service area kantor, sanitasi umum pabrik, kebersihan taman, dan pengelolaan limbah non-B3 fasilitas umum.</p>
+      </div>
+      <div class="card-item" style="flex:1 1 30%;">
+        <h3><i class="fa-solid fa-utensils" style="color:#0284c7;"></i> 2. Makanan / Katering</h3>
+        <p>Pengelolaan kantin pabrik, katering shift kerja karyawan, dan penyediaan makanan bergizi lembur malam.</p>
+      </div>
+      <div class="card-item" style="flex:1 1 30%;">
+        <h3><i class="fa-solid fa-shield-cat" style="color:#0284c7;"></i> 3. Satuan Pengamanan</h3>
+        <p>Penjagaan pos gerbang pabrik, patroli perimeter dinding pabrik, kontrol akses tamu, dan pemantauan CCTV.</p>
+      </div>
+      <div class="card-item accent-gold" style="flex:1 1 46%;">
+        <h3><i class="fa-solid fa-oil-well" style="color:#d97706;"></i> 4. Penunjang Energi & Fasilitas</h3>
+        <p>Jasa pendukung utilitas uap, generator daya cadangan, dan pemeliharaan alat berat penunjang non-ekstraksi langsung.</p>
+      </div>
+      <div class="card-item accent-emerald" style="flex:1 1 46%;">
+        <h3><i class="fa-solid fa-bus" style="color:#059669;"></i> 5. Angkutan Antar-Jemput</h3>
+        <p>Armada shuttle bus antar-jemput shift karyawan pabrik, armada logistik jemputan malam, dan mobil operasional umum.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 18 / 55</span>
+</div>
+
+<!-- SLIDE 19: PASAL 81 - MEKANISME ALIH STATUS DEMI HUKUM -->
+<div class="slide-container" id="slide19">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-gavel"></i> Ketentuan Eksekutorial</div>
+    <h2 class="slide-title">Pasal 81: Alih Status Otomatis Demi Hukum</h2>
+  </div>
+  <div class="content-area">
+    <div class="metric-spotlight">
+      <div class="metric-box" style="background:#fef2f2; border-color:#fecaca;">
+        <div class="metric-number" style="color:#e11d48; font-size:68px;">Pasal 81</div>
+        <div class="metric-label" style="color:#9f1239;">Alih Status Otomatis</div>
+      </div>
+      <div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; color:#0f172a; margin-bottom:12px;">
+          Konsekuensi Pelanggaran Lini Produksi
+        </h3>
+        <p style="font-size:17px; color:#334155; line-height:1.6; background:#f8fafc; border-left:5px solid #e11d48; padding:14px; margin-bottom:12px;">
+          <em>"Dalam hal Pekerja/Buruh dari Perusahaan alih daya digunakan oleh Perusahaan Pemberi Kerja untuk melaksanakan kegiatan yang berhubungan langsung dengan proses produksi, maka <strong>demi hukum status Hubungan Kerja beralih menjadi Hubungan Kerja antara Pekerja/Buruh dan Perusahaan Pemberi Kerja</strong>."</em>
+        </p>
+        <p style="font-size:16px; color:#64748b;">
+          Frasa "demi hukum" berarti hubungan kerja beralih secara otomatis tanpa membutuhkan persetujuan atau negosiasi ulang dari pihak manajemen User.
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 19 / 55</span>
+</div>
+
+<!-- SLIDE 20: ALUR PENGESAHAN NOTA PENGAWAS KE PN -->
+<div class="slide-container" id="slide20">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-route"></i> Prosedur Eksekusi Cepat</div>
+    <h2 class="slide-title">Pengesahan Nota Pengawas ke Pengadilan Negeri</h2>
+  </div>
+  <div class="content-area">
+    <div class="timeline-row">
+      <div class="timeline-step">
+        <div class="step-circle">1</div>
+        <div class="step-content">
+          <h4>Bipartit Buntu</h4>
+          <p>Perundingan serikat vs manajemen buntu atau perusahaan menolak berunding.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">2</div>
+        <div class="step-content">
+          <h4>Inspeksi Pengawas</h4>
+          <p>Pegawai Pengawas Ketenagakerjaan memeriksa fakta alur kerja di pabrik.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">3</div>
+        <div class="step-content">
+          <h4>Penerbitan Nota</h4>
+          <p>Pengawas menerbitkan Nota Pemeriksaan resmi temuan pelanggaran alih daya.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle" style="background:#059669;">4</div>
+        <div class="step-content">
+          <h4>Pengesahan PN</h4>
+          <p>Buruh memohon penetapan fiat eksekusi ke Pengadilan Negeri setempat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 20 / 55</span>
+</div>
+
+<!-- SLIDE 21: PERBANDINGAN JALUR SENGKETA: PHI VS PN -->
+<div class="slide-container" id="slide21">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-code-fork"></i> Litigasi vs Eksekusi Cepat</div>
+    <h2 class="slide-title">Perbandingan Jalur Hukum Sengketa Outsourcing</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-hourglass-start" style="color:#0284c7;"></i> Skema Konvensional PHI (Lama)</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-circle-xmark"></i> Bipartit (30 Hari) → Mediasi Disnaker (30 Hari).</li>
+          <li><i class="fa-solid fa-circle-xmark"></i> Gugatan pembuktian berbelit di Pengadilan Hubungan Industrial.</li>
+          <li><i class="fa-solid fa-circle-xmark"></i> Kasasi ke Mahkamah Agung (durasi total 1 s.d. 2 tahun).</li>
+          <li><i class="fa-solid fa-circle-xmark"></i> Perusahaan memiliki waktu banding berlarut-larut.</li>
+        </ul>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-bolt-lightning" style="color:#059669;"></i> Skema Nota Pengawas PN (Pasal 81 RUU)</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-check-double"></i> Pemeriksaan faktual langsung Pengawas Ketenagakerjaan.</li>
+          <li><i class="fa-solid fa-check-double"></i> Penerbitan Nota Penetapan Pelanggaran alih daya sah.</li>
+          <li><i class="fa-solid fa-check-double"></i> Pengesahan (*fiat eksekusi*) langsung oleh Pengadilan Negeri.</li>
+          <li><i class="fa-solid fa-check-double"></i> <strong>Eksekutorial instan</strong> tanpa sidang pembuktian berulang.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 21 / 55</span>
+</div>
+
+<!-- SLIDE 22: ADOPSI PRINSIP TUPE INTERNASIONAL -->
+<div class="slide-container" id="slide22">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-handshake-angle"></i> Perlindungan Berkelanjutan</div>
+    <h2 class="slide-title">Prinsip TUPE dalam Pasal 82 Ayat (3) RUU</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item" style="flex:1.2;">
+        <h3><i class="fa-solid fa-shield-halved" style="color:#0284c7;"></i> Doktrin Perlindungan TUPE</h3>
+        <p style="font-size:17px; line-height:1.6; margin-bottom:12px;">
+          <em>Transfer of Undertakings (Protection of Employment)</em> menjamin pergantian vendor pemenang tender alih daya di pabrik tidak boleh mengorbankan status atau memutus kerja buruh eksisting.
+        </p>
+        <p style="font-size:16px; color:#334155; background:#ffffff; border-left:5px solid #0284c7; padding:14px; border:1px solid #cbd5e1;">
+          <strong>Pasal 82 ayat (3):</strong> PKWT wajib memuat klausul pengalihan perlindungan hak apabila terjadi pergantian vendor sepanjang objek pekerjaannya tetap ada.
+        </p>
+      </div>
+      <div class="card-item accent-emerald" style="flex:0.8;">
+        <h3><i class="fa-solid fa-circle-check" style="color:#059669;"></i> Kewajiban Vendor Baru</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-user-plus"></i> Wajib mempekerjakan buruh dari vendor lama.</li>
+          <li><i class="fa-solid fa-arrow-up-right-dots"></i> Dilarang menurunkan tingkat upah eksisting.</li>
+          <li><i class="fa-solid fa-business-time"></i> Melanjutkan masa kerja yang telah ditempuh.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 22 / 55</span>
+</div>
+
+<!-- SLIDE 23: AKUMULASI MASA KERJA KUMULATIF LINTAS VENDOR -->
+<div class="slide-container" id="slide23">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-calculator"></i> Reformasi PKWT Vendor</div>
+    <h2 class="slide-title">Akumulasi Masa Kerja Kumulatif (Pasal 82 Ayat 4)</h2>
+  </div>
+  <div class="content-area">
+    <div class="metric-spotlight">
+      <div class="metric-box">
+        <div class="metric-number" style="font-size:68px;">Kumulatif</div>
+        <div class="metric-label">Masa Kerja Lintas Tender Vendor</div>
+      </div>
+      <div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; color:#0f172a; margin-bottom:12px;">
+          Larangan Praktik Reset Masa Kerja
+        </h3>
+        <p style="font-size:18px; color:#334155; line-height:1.6; margin-bottom:12px;">
+          Praktik mengganti vendor alih daya setiap 1-2 tahun untuk mengulang masa kerja buruh dari nol (*reset to zero*) <strong>dinyatakan melanggar hukum secara tegas</strong>.
+        </p>
+        <p style="font-size:16px; color:#0369a1; font-weight:600; background:#f0f9ff; padding:14px; border-radius:8px;">
+          Masa kerja di vendor A dihitung menyatu dengan vendor B. Jika akumulasi melampaui batas maksimal PKWT (2 th + perpanjangan 2x @ 1 th), pekerja wajib diangkat menjadi karyawan tetap!
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 23 / 55</span>
+</div>
+
+<!-- SLIDE 24: DAMPAK MASA KERJA TERHADAP BATAS KONTRAK PKWT -->
+<div class="slide-container" id="slide24">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-clock-rotate-left"></i> Siklus Hidup Kontrak</div>
+    <h2 class="slide-title">Kalkulasi Batas Maksimal PKWT Pekerja Vendor</h2>
+  </div>
+  <div class="content-area">
+    <div class="timeline-row">
+      <div class="timeline-step">
+        <div class="step-circle">Thn 1-2</div>
+        <div class="step-content">
+          <h4>Kontrak Awal Vendor A</h4>
+          <p>Masa kerja awal di pabrik maksimal 2 tahun pertama.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Thn 3</div>
+        <div class="step-content">
+          <h4>Ganti Tender Vendor B</h4>
+          <p>Vendor B wajib mengakui 2 tahun masa kerja sebelumnya.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Thn 4</div>
+        <div class="step-content">
+          <h4>Perpanjangan Akhir</h4>
+          <p>Batas maksimal perpanjangan kedua (total 4 tahun kumulatif).</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle" style="background:#e11d48;">Thn 5</div>
+        <div class="step-content">
+          <h4>Wajib PKWTT</h4>
+          <p>Demi hukum menjadi <strong>Karyawan Tetap</strong> tanpa masa percobaan!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 24 / 55</span>
+</div>
+
+<!-- SLIDE 25: LARANGAN SUNAT HAK NORMATIF -->
+<div class="slide-container" id="slide25">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-hand-holding-dollar"></i> Integritas Finansial Vendor</div>
+    <h2 class="slide-title">Larangan Pemotongan Hak & Praktik Sunat Upah</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-scissors" style="color:#e11d48;"></i> Larangan Pasal 82 Ayat (7)</h3>
+        <p style="font-size:18px; line-height:1.6; background:#ffffff; border:1px solid #cbd5e1; padding:16px; border-radius:8px;">
+          <em>"Perusahaan alih daya dilarang memotong atau mengurangi hak normatif Pekerja/Buruh alih daya yang telah diperjanjikan di dalam Perjanjian Kerja."</em>
+        </p>
+      </div>
+      <div class="card-item">
+        <h3><i class="fa-solid fa-list-ul" style="color:#0284c7;"></i> Praktik Terlarang di Lapangan</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-xmark" style="color:#be123c;"></i> Pemotongan biaya seragam kerja, ID card, dan sepatu APD dari gaji.</li>
+          <li><i class="fa-solid fa-xmark" style="color:#be123c;"></i> Pungutan biaya rekrutmen atau administrasi penempatan kerja.</li>
+          <li><i class="fa-solid fa-xmark" style="color:#be123c;"></i> Pemotongan iuran BPJS tanpa disetorkan ke kas negara.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 25 / 55</span>
+</div>
+
+<!-- SLIDE 26: SANKSI ADMINISTRATIF BERJENJANG (PASAL 83) -->
+<div class="slide-container" id="slide26">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-triangle-exclamation"></i> Penegakan Administratif</div>
+    <h2 class="slide-title">Sanksi Administratif Pelanggaran Vendor & User</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <div style="font-size:30px; font-weight:800; color:#0284c7; margin-bottom:8px;">Tahap 1</div>
+        <h3>Teguran Resmi</h3>
+        <p>Surat teguran dari instansi ketenagakerjaan atas temuan ketidakpatuhan administrasi perizinan standar.</p>
+      </div>
+      <div class="card-item accent-gold">
+        <div style="font-size:30px; font-weight:800; color:#d97706; margin-bottom:8px;">Tahap 2</div>
+        <h3>Peringatan Tertulis</h3>
+        <p>Diberikan batas waktu perbaikan hak pekerja dan pemenuhan sertifikasi standar ketenagakerjaan.</p>
+      </div>
+      <div class="card-item accent-red">
+        <div style="font-size:30px; font-weight:800; color:#e11d48; margin-bottom:8px;">Tahap 3</div>
+        <h3>Pembekuan Izin</h3>
+        <p>Pembatasan kapasitas produksi pabrik User serta pembekuan izin operasional perusahaan alih daya.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 26 / 55</span>
+</div>
+
+<!-- SLIDE 27: BLEED LAYOUT - PEMETAAN ALUR PRODUKSI PABRIK -->
+<div class="slide-container bleed-layout" id="slide27">
+  <div class="bleed-content">
+    <div class="eyebrow"><i class="fa-solid fa-gears"></i> Operasional Manufaktur</div>
+    <h2 class="slide-title" style="font-size:30px; margin-bottom:16px;">Identifikasi Proses Produksi Inti</h2>
+    <p style="font-size:18px; color:#334155; line-height:1.6; margin-bottom:14px;">
+      Proses produksi manufaktur mencakup seluruh mata rantai transformasi bahan baku (*raw material*) hingga menjadi barang siap jual.
+    </p>
+    <div style="background:#fef2f2; border-left:5px solid #e11d48; padding:16px; border-radius:8px;">
+      <h4 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:18px; color:#be123c; margin-bottom:6px;">Indikator Larangan Alih Daya</h4>
+      <p style="font-size:16px; color:#334155; line-height:1.5;">
+        Pengoperasian mesin cetak (injection/stamping), perakitan (assembly line), formulasi kimia, serta inspeksi mutu (QC) mutlak <strong>dilarang menggunakan pekerja vendor</strong>.
+      </p>
+    </div>
+  </div>
+  <div class="bleed-image-box">
+    <img src="https://www.wirtgen-group.com/media/06_benninghoven/01_bilder_5/06_ausbildung/be_ausbildungsberufe/be_2026/b_pic_vocational-training_apprenticeship_2025_1225_hi_web_0190_1680x945.jpg" alt="Lini Produksi dan Operator Mesin Pabrik">
+  </div>
+  <span class="slide-footer">Slide 27 / 55</span>
+</div>
+
+<!-- SLIDE 28: 3 ZONA OPERASIONAL LANTAI PABRIK -->
+<div class="slide-container" id="slide28">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-layer-group"></i> Zoning Pabrik</div>
+    <h2 class="slide-title">Klasifikasi 3 Zona Operasional Lantai Pabrik</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-ban" style="color:#e11d48;"></i> Zona Merah: Lini Core</h3>
+        <p style="margin-bottom:8px;"><strong>Status: DILARANG ALIH DAYA</strong></p>
+        <p>Operator mesin utama (CNC, Stamping, Molding, Painting), teknisi kalibrasi mesin, QC/QA inline, teknisi formulasi batch produksi.</p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-triangle-exclamation" style="color:#d97706;"></i> Zona Kuning: Buffer Support</h3>
+        <p style="margin-bottom:8px;"><strong>Status: GREY AREA (BERISIKO)</strong></p>
+        <p>Line feeding material ke meja mesin, packing sekunder karton luar, perakitan pallet staging, operator forklift transfer antar-gedung.</p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-circle-check" style="color:#059669;"></i> Zona Hijau: Penunjang Legal</h3>
+        <p style="margin-bottom:8px;"><strong>Status: 100% LEGAL & SAH</strong></p>
+        <p>Petugas sanitasi kantor & toilet pabrik, juru masak kantin shift, security pos gerbang & perimeter, driver shuttle antar-jemput buruh.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 28 / 55</span>
+</div>
+
+<!-- SLIDE 29: GREY AREAS DI PABRIK MANUFAKTUR -->
+<div class="slide-container" id="slide29">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-triangle-exclamation"></i> Identifikasi Zona Kritis</div>
+    <h2 class="slide-title">Batas Abu-Abu (Grey Areas) di Lantai Produksi</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-boxes-packing" style="color:#e11d48;"></i> Packaging & Packing</h3>
+        <p>
+          <strong>Risiko Tinggi:</strong> Pengemasan primer (botol/sachet) menyatu langsung dengan alur conveyor mesin produksi = <em>Core</em>. Pengemasan sekunder karton luar kerap dipersengketakan serikat buruh.
+        </p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-truck-ramp-box" style="color:#d97706;"></i> Line Feeder Material</h3>
+        <p>
+          <strong>Risiko Ekstrem:</strong> Memasok bahan baku langsung ke atas meja mesin produksi. Terikat erat dengan siklus kerja (*cycle time*) mesin pabrik sehingga dianggap bagian proses inti.
+        </p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-warehouse" style="color:#059669;"></i> Warehouse & Forklift</h3>
+        <p>
+          <strong>Risiko Terkendali:</strong> Pergudangan barang jadi (*finished goods*) di luar gedung produksi dapat dipertahankan bila diikat dalam skema logistik pihak ketiga (3PL) berbasis SLA output.
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 29 / 55</span>
+</div>
+
+<!-- SLIDE 30: MATRIKS KLASIFIKASI POSISI MANUFAKTUR -->
+<div class="slide-container" id="slide30">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-table-list"></i> Pedoman Penempatan Kerja</div>
+    <h2 class="slide-title">Matriks Legalitas Outsourcing Posisi Manufaktur</h2>
+  </div>
+  <div class="content-area">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Posisi / Bidang Tugas di Pabrik</th>
+            <th>Klasifikasi Alur Kerja</th>
+            <th>Status Legalitas Alih Daya</th>
+            <th>Dasar Pertimbangan Hukum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Operator Mesin (Stamping, Milling, CNC)</strong></td>
+            <td>Lini Produksi Inti</td>
+            <td><span style="color:#be123c; font-weight:800;">DILARANG KERAS</span></td>
+            <td>Transformasi produk langsung; ancaman Pasal 81 RUU.</td>
+          </tr>
+          <tr>
+            <td><strong>Quality Control (QC) & QA Inline</strong></td>
+            <td>Lini Produksi Inti</td>
+            <td><span style="color:#be123c; font-weight:800;">DILARANG KERAS</span></td>
+            <td>Menentukan kelayakan hasil output utama pabrik.</td>
+          </tr>
+          <tr>
+            <td><strong>Cleaning Service Kantor & Pabrik</strong></td>
+            <td>Jasa Penunjang</td>
+            <td><span style="color:#059669; font-weight:800;">DIPERBOLEHKAN</span></td>
+            <td>Tercantum eksplisit Pasal 80 (3) a & Permenaker 7/2026.</td>
+          </tr>
+          <tr>
+            <td><strong>Security Perimeter & Gerbang</strong></td>
+            <td>Jasa Penunjang</td>
+            <td><span style="color:#059669; font-weight:800;">DIPERBOLEHKAN</span></td>
+            <td>Tercantum eksplisit Pasal 80 (3) c & Permenaker 7/2026.</td>
+          </tr>
+          <tr>
+            <td><strong>Teknisi Pemeliharaan Mesin Utama</strong></td>
+            <td>Support Produksi</td>
+            <td><span style="color:#d97706; font-weight:800;">BERISIKO TINGGI</span></td>
+            <td>Bukan 5 rumpun penunjang; rawan ditafsirkan sebagai core.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 30 / 55</span>
+</div>
+
+<!-- SLIDE 31: STUDI PRESEDEN SENGKETA ALIH DAYA MANUFAKTUR -->
+<div class="slide-container" id="slide31">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-scale-balanced"></i> Yurisprudensi & Kasus</div>
+    <h2 class="slide-title">Studi Kasus Preseden Sengketa Alih Daya Manufaktur</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-car" style="color:#0284c7;"></i> Kasus Pabrik Otomotif (Jawa Barat)</h3>
+        <p>
+          <strong>Objek Sengketa:</strong> Pengalihan sub-assembly wiring harness dan pemasangan pintu mobil kepada vendor alih daya.<br><br>
+          <strong>Putusan Pengadilan:</strong> Pekerjaan dinyatakan sebagai bagian tak terpisahkan dari manufaktur mobil. Sebanyak 140 buruh vendor diangkat menjadi karyawan tetap User dan dibayarkan selisih upah.
+        </p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-bottle-water" style="color:#d97706;"></i> Kasus Pabrik Minuman Ringan (Jawa Timur)</h3>
+        <p>
+          <strong>Objek Sengketa:</strong> Operator palletizing dan loading galon air di ujung conveyor botol otomatis.<br><br>
+          <strong>Putusan Pengadilan:</strong> Dianggap bagian dari proses akhir produksi yang menyatu dengan alur pabrik. Tuntutan serikat buruh dikabulkan penuh disertai denda keterlambatan penyesuaian hak.
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 31 / 55</span>
+</div>
+
+<!-- SLIDE 32: KERANGKA TIGA DIMENSI RISIKO PABRIK -->
+<div class="slide-container" id="slide32">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-shield-virus"></i> Tata Kelola Risiko Pabrik</div>
+    <h2 class="slide-title">Kerangka Tiga Dimensi Risiko Alih Daya Pabrik</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-scale-balanced" style="color:#0284c7;"></i> 1. Risiko Yuridis</h3>
+        <p>Pengesahan nota pengawas ke PN berujung pengangkatan massal buruh vendor menjadi karyawan tetap User tanpa proses seleksi probation.</p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-money-bill-transfer" style="color:#d97706;"></i> 2. Risiko Finansial</h3>
+        <p>Kewajiban pelunasan rapelan upah skala, tunjangan, dan bonus (*back-pay*) yang tidak teranggarkan dalam OPEX tahunan pabrik.</p>
+      </div>
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-gears" style="color:#e11d48;"></i> 3. Risiko Operasional</h3>
+        <p>Aksi mogok kerja atau pembatasan kapasitas produksi oleh dinas yang menghentikan rantai pasok ke klien manufaktur global.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 32 / 55</span>
+</div>
+
+<!-- SLIDE 33: LIABILITAS BACK-PAY & DAMPAK NERACA -->
+<div class="slide-container" id="slide33">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-calculator"></i> Dampak Finansial</div>
+    <h2 class="slide-title">Simulasi Liabilitas Back-Pay Akibat Alih Status</h2>
+  </div>
+  <div class="content-area">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Komponen Tuntutan Finansial</th>
+            <th>Kondisi Status Vendor</th>
+            <th>Kondisi Pasca-Konversi Status User</th>
+            <th>Potensi Selisih (Back-Pay per Orang)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Upah Pokok Bulanan</strong></td>
+            <td>Upah Minimum Standar (UMP/UMK)</td>
+            <td>Skala Upah Pabrik (UMP + 25% Grade Teknis)</td>
+            <td>Rp 1.250.000 / bulan x masa kerja</td>
+          </tr>
+          <tr>
+            <td><strong>Tunjangan Shift & Bahaya</strong></td>
+            <td>Tidak Diberikan oleh Vendor</td>
+            <td>Wajib Sesuai PKB User (Rp 600.000 / bln)</td>
+            <td>Rp 600.000 / bulan x masa kerja</td>
+          </tr>
+          <tr>
+            <td><strong>Bonus Tahunan Pabrik</strong></td>
+            <td>Nihil / 0 Bulan Gaji</td>
+            <td>Rata-rata 2 Bulan Gaji Pokok Tahunan</td>
+            <td>2x Gaji Pokok per tahun masa kerja</td>
+          </tr>
+          <tr>
+            <td><strong>Iuran Jaminan Pensiun</strong></td>
+            <td>Sering Dilalaikan Vendor</td>
+            <td>Wajib Penuh Sesuai Regulasi BPJS TK</td>
+            <td>Pelunasan rapelan tunggakan denda 2%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 33 / 55</span>
+</div>
+
+<!-- SLIDE 34: SIMULASI 100 OPERATOR VENDOR -->
+<div class="slide-container" id="slide34">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-coins"></i> Stress Test Neraca</div>
+    <h2 class="slide-title">Stress-Test Finansial: Kasus 100 Operator Pabrik</h2>
+  </div>
+  <div class="content-area">
+    <div class="metric-spotlight">
+      <div class="metric-box" style="background:#fef2f2; border-color:#fecaca;">
+        <div class="metric-number" style="color:#be123c; font-size:62px;">Rp 5,4 M</div>
+        <div class="metric-label" style="color:#9f1239;">Estimasi Liabilitas Back-Pay 2 Tahun</div>
+      </div>
+      <div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:22px; color:#0f172a; margin-bottom:10px;">
+          Kalkulasi Risiko 100 Pekerja Lini Produksi (24 Bulan Kerja)
+        </h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-angle-right"></i> Selisih Upah Pokok: 100 org x Rp 1.250.000 x 24 bln = <strong>Rp 3.000.000.000</strong></li>
+          <li><i class="fa-solid fa-angle-right"></i> Rapelan Tunjangan Shift/K3: 100 org x Rp 600.000 x 24 bln = <strong>Rp 1.440.000.000</strong></li>
+          <li><i class="fa-solid fa-angle-right"></i> Bonus Tahunan PKB Pabrik: 100 org x 2 x Rp 5.000.000 = <strong>Rp 1.000.000.000</strong></li>
+          <li><i class="fa-solid fa-triangle-exclamation" style="color:#e11d48;"></i> Belum termasuk denda keterlambatan BPJS dan biaya hukum penanganan perkara.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 34 / 55</span>
+</div>
+
+<!-- SLIDE 35: BLEED LAYOUT - OPSI STRATEGIS INSOURCING VS VENDOR -->
+<div class="slide-container bleed-layout" id="slide35">
+  <div class="bleed-content">
+    <div class="eyebrow"><i class="fa-solid fa-people-roof"></i> Strategi Ketenagakerjaan</div>
+    <h2 class="slide-title" style="font-size:30px; margin-bottom:16px;">Opsi Strategis: Insourcing vs Pihak Ketiga</h2>
+    <p style="font-size:18px; color:#334155; line-height:1.6; margin-bottom:14px;">
+      Menghadapi Permenaker 7/2026 dan RUU Ketenagakerjaan, direksi pabrik dihadapkan pada dua pilihan restrukturisasi tenaga kerja lantai produksi.
+    </p>
+    <ul class="styled-list">
+      <li><i class="fa-solid fa-check"></i> <strong>Pilihan A: Full Insourcing:</strong> Mengangkat operator mesin lini produksi menjadi PKWTT pabrik guna mengeliminasi 100% risiko Pasal 81 RUU.</li>
+      <li><i class="fa-solid fa-check"></i> <strong>Pilihan B: Vendor Ber-SLA Murni:</strong> Membatasi alih daya hanya pada jasa penunjang legal dengan kontrak berbasis keluaran (*output-based SLA*).</li>
+    </ul>
+  </div>
+  <div class="bleed-image-box">
+    <img src="https://img.magnific.com/free-photo/team-diverse-engineers-business-partners-evaluates-solar-performance_482257-126094.jpg?semt=ais_hybrid&w=740&q=80" alt="Supervisi Manajemen dan Pekerja Pabrik">
+  </div>
+  <span class="slide-footer">Slide 35 / 55</span>
+</div>
+
+<!-- SLIDE 36: COST-BENEFIT ANALYSIS INSOURCING VS RISK -->
+<div class="slide-container" id="slide36">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-chart-pie"></i> Analisis Finansial Bisnis</div>
+    <h2 class="slide-title">Cost-Benefit Analysis: Kepatuhan vs Biaya Sengketa</h2>
+  </div>
+  <div class="content-area">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Parameter Komparasi</th>
+            <th>Strategi Mempertahankan Outsourcing Core</th>
+            <th>Strategi Insourcing / Karyawan Sendiri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Biaya Jangka Pendek (OPEX)</strong></td>
+            <td>Tampak lebih hemat 15-20% fee manajemen</td>
+            <td>Kenaikan beban gaji & tunjangan tetap 15-25%</td>
+          </tr>
+          <tr>
+            <td><strong>Eksposur Liabilitas Hukum</strong></td>
+            <td><strong style="color:#be123c;">Ekstrem:</strong> Ancaman rapelan gaji hingga miliaran rupiah</td>
+            <td><strong style="color:#059669;">Nol (0%):</strong> Terlindungi penuh dari sanksi Pasal 81</td>
+          </tr>
+          <tr>
+            <td><strong>Produktivitas & Retensi</strong></td>
+            <td>Turnover tinggi, moral rendah, kebocoran SOP</td>
+            <td>Keahlian teknis terjaga, loyalitas & output tinggi</td>
+          </tr>
+          <tr>
+            <td><strong>Kepastian Pasokan Klien</strong></td>
+            <td>Rentan disengketakan laporan pengawas</td>
+            <td>Stabilitas hubungan industrial internal lebih harmonis</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 36 / 55</span>
+</div>
+
+<!-- SLIDE 37: EKSPOSUR RANTAI PASOK GLOBAL & ESG AUDIT -->
+<div class="slide-container" id="slide37">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-globe"></i> Kepatuhan Standar Internasional</div>
+    <h2 class="slide-title">Dampak Pelanggaran Alih Daya pada Audit ESG Global</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-certificate" style="color:#0284c7;"></i> Audit Kepatuhan Pembeli Global</h3>
+        <p>Prinsipal ekspor (Nike, Apple, Unilever, dll.) mensyaratkan kepatuhan mutlak hukum perburuhan lokal. Pelanggaran alih daya memicu temuan *Zero Tolerance* pada audit SMETA/BSCI.</p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-file-excel" style="color:#d97706;"></i> Pemutusan Kontrak Dagang</h3>
+        <p>Temuan buruh alih daya di lini mesin dapat dianggap sebagai praktik komodifikasi pekerja ilegal yang berujung pada pembatalan *purchase order* (PO) secara sepihak.</p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-leaf" style="color:#059669;"></i> Sertifikasi ISO 45001 & SA8000</h3>
+        <p>Kepatuhan integrasi alih daya menjamin skor kepatuhan audit sosial (Social Accountability) pabrik tetap tinggi di mata investor modal asing.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 37 / 55</span>
+</div>
+
+<!-- SLIDE 38: PROTOKOL PEMISAHAN KOMANDO KERJA -->
+<div class="slide-container" id="slide38">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-sitemap"></i> Tata Laksana Pengawasan Kerja</div>
+    <h2 class="slide-title">Protokol Pemisahan Komando Kerja (Supervision Segregation)</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-ban" style="color:#e11d48;"></i> Dilarang (Direct Command)</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-xmark"></i> Supervisor pabrik User menegur langsung pekerja vendor.</li>
+          <li><i class="fa-solid fa-xmark"></i> User mengatur absensi harian dan cuti pekerja alih daya.</li>
+          <li><i class="fa-solid fa-xmark"></i> User menerbitkan Surat Peringatan (SP) kepada pekerja vendor.</li>
+        </ul>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-check" style="color:#059669;"></i> Wajib Diterapkan (Vendor Lead)</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-check"></i> Seluruh instruksi kerja melalui Site Supervisor resmi Vendor.</li>
+          <li><i class="fa-solid fa-check"></i> Evaluasi User didasarkan pada SLA hasil pekerjaan penunjang.</li>
+          <li><i class="fa-solid fa-check"></i> Pembinaan disiplin merupakan yurisdiksi mutlak internal vendor.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 38 / 55</span>
+</div>
+
+<!-- SLIDE 39: K3 & FASILITAS BERSAMA DI PABRIK - BLEED LAYOUT -->
+<div class="slide-container bleed-layout" id="slide39">
+  <div class="bleed-content">
+    <div class="eyebrow"><i class="fa-solid fa-helmet-safety"></i> Keselamatan Kerja</div>
+    <h2 class="slide-title" style="font-size:30px; margin-bottom:16px;">Standar K3 & Fasilitas Bersama</h2>
+    <p style="font-size:18px; color:#334155; line-height:1.6; margin-bottom:14px;">
+      Pasal 107 RUU dan Permenaker 7/2026 menegaskan bahwa pekerja alih daya berhak atas standar keselamatan yang setara dengan pekerja tetap.
+    </p>
+    <ul class="styled-list">
+      <li><i class="fa-solid fa-shield-heart"></i> <strong>APD Cuma-Cuma:</strong> Helm, safety shoes, dan kacamata pelindung wajib disediakan gratis tanpa potongan upah.</li>
+      <li><i class="fa-solid fa-notes-medical"></i> <strong>Fasilitas Medis & Tanggap Darurat:</strong> Akses penuh pada pos pertolongan pertama (P3K) dan poliklinik pabrik.</li>
+      <li><i class="fa-solid fa-utensils"></i> <strong>Fasilitas Bersama:</strong> Akses setara ke kantin, tempat ibadah, dan ruang laktasi.</li>
+    </ul>
+  </div>
+  <div class="bleed-image-box">
+    <img src="https://occupationalsafetyacademy.com/cdn/shop/files/IOSH_Working_Safely_Preparation.webp?v=1785315613&width=600" alt="Inspeksi K3 dan Keselamatan Kerja Pabrik">
+  </div>
+  <span class="slide-footer">Slide 39 / 55</span>
+</div>
+
+<!-- SLIDE 40: PERAN SERIKAT PEKERJA & AUDIT BIPARTIT -->
+<div class="slide-container" id="slide40">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-users-rays"></i> Hubungan Industrial</div>
+    <h2 class="slide-title">Peran Serikat Pekerja dalam Pengawasan Alih Daya</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-hand-fist" style="color:#0284c7;"></i> LKS Bipartit Wajib</h3>
+        <p>
+          Forum LKS Bipartit (Pasal 147 RUU) menjadi instrumen resmi serikat buruh menuntut transparansi kontrak vendor yang beroperasi di lantai pabrik.
+        </p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-file-contract" style="color:#d97706;"></i> Klausul Pembatasan PKB</h3>
+        <p>
+          Serikat buruh berhak memasukkan klausul pembatasan alih daya secara rinci ke dalam Perjanjian Kerja Bersama (PKB) yang mengikat manajemen User.
+        </p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-bullhorn" style="color:#059669;"></i> Legal Standing Pelaporan</h3>
+        <p>
+          Serikat pekerja memiliki hak hukum melaporkan indikasi pelanggaran core alih daya langsung ke Pegawai Pengawas Ketenagakerjaan.
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 40 / 55</span>
+</div>
+
+<!-- SLIDE 41: TATA KELOLA FASILITAS BERSAMA DI PABRIK -->
+<div class="slide-container" id="slide41">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-building-user"></i> Tata Ruang & Human Capital</div>
+    <h2 class="slide-title">Tata Kelola Fasilitas Bersama Pekerja Pabrik</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-person-shelter" style="color:#0284c7;"></i> Kantin & Istirahat</h3>
+        <p>Pekerja alih daya berhak menikmati fasilitas kantin yang higienis dan ruang istirahat shift yang setara tanpa segregasi status kepegawaian.</p>
+      </div>
+      <div class="card-item accent-gold">
+        <h3><i class="fa-solid fa-person-breastfeeding" style="color:#d97706;"></i> Ruang Laktasi (Pasal 94)</h3>
+        <p>Pekerja wanita alih daya berhak atas ruang laktasi higienis dan waktu memerah ASI selama jam operasional kerja tanpa pemotongan upah.</p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-mosque" style="color:#059669;"></i> Tempat Ibadah & Sanitasi</h3>
+        <p>Akses ibadah tepat waktu dan toilet berstandar K3 yang dirawat berkala oleh tim sanitasi bersertifikat.</p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 41 / 55</span>
+</div>
+
+<!-- SLIDE 42: AUDIT RANTAI PASOK & LARANGAN TAHAN IJAZAH -->
+<div class="slide-container" id="slide42">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-id-card-clip"></i> Kepatuhan Hak Asasi Tenaga Kerja</div>
+    <h2 class="slide-title">Larangan Tahan Ijazah & Audit Rantai Pasok Vendor</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-ban" style="color:#e11d48;"></i> Pidana Tahan Ijazah (Pasal 66 & 229 RUU)</h3>
+        <p style="margin-bottom:10px;">
+          Vendor alih daya <strong>dilarang keras menahan ijazah, KTP, atau dokumen pribadi asli buruh</strong> sebagai jaminan kerja.
+        </p>
+        <p style="background:#ffffff; border-left:4px solid #e11d48; padding:10px; font-weight:700; color:#be123c;">
+          Ancaman Pidana: Penjara paling lama 4 (empat) tahun dan denda Kategori IV. User wajib memastikan vendor bebas dari praktik ini.
+        </p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-child" style="color:#059669;"></i> Audit Bebas Buruh Anak (Pasal 92 Ayat 3)</h3>
+        <p style="margin-bottom:10px;">
+          Pabrik manufaktur skala menengah dan besar <strong>wajib mengaudit seluruh rantai pasok vendor</strong> bebas dari keterlibatan pekerja anak.
+        </p>
+        <p style="background:#ffffff; border-left:4px solid #059669; padding:10px; font-weight:700; color:#047857;">
+          Pelanggaran mempekerjakan anak pada bentuk terburuk diancam pidana penjara 15 tahun (Pasal 236 RUU).
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 42 / 55</span>
+</div>
+
+<!-- SLIDE 43: SECTION TITLE - 9 LAMPIRAN OPERASIONAL -->
+<div class="slide-container" id="slide43" style="text-align:center; align-items:center;">
+  <div class="content-area" style="max-width:920px;">
+    <span class="eyebrow" style="justify-content:center;"><i class="fa-solid fa-folder-tree"></i> Modul 7: Instrumen & Toolkits</span>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:42px; font-weight:800; color:#0f172a; margin:16px 0;">
+      Kompilasi 9 Lampiran Operasional & Instrumen Hukum Pabrik
+    </h2>
+    <p style="font-size:19px; color:#475569; line-height:1.6;">
+      Pedoman praktis siap pakai bagi Legal & HR Pabrik Manufaktur: format audit vendor, template kontrak B2B, SOP pemeriksaan pengawas, formula klausul TUPE, dan matriks risiko.
+    </p>
+  </div>
+  <span class="slide-footer">Slide 43 / 55</span>
+</div>
+
+<!-- SLIDE 44: LAMPIRAN 1 - AUDIT CHECKLIST VENDOR -->
+<div class="slide-container" id="slide44">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 1: Instrumen Operasional</div>
+    <h2 class="slide-title">Matriks Audit Uji Tuntas (Due Diligence) Vendor</h2>
+  </div>
+  <div class="content-area">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Item Pemeriksaan Kepatuhan Vendor</th>
+            <th>Dokumen Verifikasi</th>
+            <th>Standar Permenaker 7/2026 & RUU</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Bentuk Badan Hukum</strong></td>
+            <td>Akta Notaris PT, SK Kemenkumham RI</td>
+            <td>Wajib Perseroan Terbatas (PT)</td>
+          </tr>
+          <tr>
+            <td><strong>Perizinan Berusaha Berbasis Risiko</strong></td>
+            <td>NIB OSS Pemerintah Pusat, Sertifikat Standar</td>
+            <td>Wajib Aktif dan Terverifikasi Pusat</td>
+          </tr>
+          <tr>
+            <td><strong>Pencatatan Perjanjian Kerja Sama</strong></td>
+            <td>Tanda Terima Bukti Lapor Disnaker Kab/Kota</td>
+            <td>Wajib Tercatat Maksimal H+3 Kerja</td>
+          </tr>
+          <tr>
+            <td><strong>Dokumen Struktur Skala Upah</strong></td>
+            <td>Salinan Pengesahan Disnaker / Lampiran PP</td>
+            <td>Wajib Diterapkan untuk Masa Kerja &gt; 1 Th</td>
+          </tr>
+          <tr>
+            <td><strong>Klausul TUPE dalam Kontrak Kerja</strong></td>
+            <td>Draft Perjanjian Kerja Waktu Tertentu (PKWT)</td>
+            <td>Wajib Memuat Pengalihan Masa Kerja</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 44 / 55</span>
+</div>
+
+<!-- SLIDE 45: LAMPIRAN 2 - TEMPLATE KLAUSUL B2B GANTI RUGI -->
+<div class="slide-container" id="slide45">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 2: Instrumen Kontraktual</div>
+    <h2 class="slide-title">Format Klausul Baku Perjanjian Kerja Sama B2B</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item" style="flex:1;">
+        <h3><i class="fa-solid fa-file-contract" style="color:#0284c7;"></i> Klausul Indemnifikasi & Ganti Rugi</h3>
+        <p style="font-size:16px; line-height:1.6; background:#ffffff; border:1px solid #cbd5e1; padding:14px; border-radius:8px;">
+          <em>"Apabila terjadi pelanggaran hukum ketenagakerjaan oleh PIHAK KEDUA (Vendor) yang mengakibatkan tuntutan alih status hubungan kerja kepada PIHAK PERTAMA (User) berdasarkan Pasal 81 RUU Ketenagakerjaan, maka PIHAK KEDUA wajib mengganti seluruh kerugian finansial, selisih back-pay, serta biaya hukum yang timbul."</em>
+        </p>
+      </div>
+      <div class="card-item accent-emerald" style="flex:1;">
+        <h3><i class="fa-solid fa-shield-check" style="color:#059669;"></i> Klausul Kepatuhan Upah & TUPE</h3>
+        <p style="font-size:16px; line-height:1.6; background:#ffffff; border:1px solid #cbd5e1; padding:14px; border-radius:8px;">
+          <em>"PIHAK KEDUA menjamin tidak akan memotong hak normatif pekerja dan wajib memperhitungkan masa kerja kumulatif dari vendor terdahulu sesuai Pasal 82 ayat (4) RUU. PIHAK KEDUA wajib menyerahkan salinan bukti lapor Disnaker H+3 dan bukti setor BPJS paling lambat tanggal 10 setiap bulannya."</em>
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 45 / 55</span>
+</div>
+
+<!-- SLIDE 46: LAMPIRAN 3 - KLAUSUL KEPATUHAN PERMENAKER 7/2026 -->
+<div class="slide-container" id="slide46">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 3: Kepatuhan Permenaker</div>
+    <h2 class="slide-title">Klausul Baku Kepatuhan Permenaker No. 7 Tahun 2026</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-item" style="border-top-color:#d97706; background:#f8fafc; padding:24px;">
+      <h3 style="margin-bottom:12px;"><i class="fa-solid fa-file-signature" style="color:#d97706;"></i> Formulasi Klausul Pelaporan Disnaker H+3</h3>
+      <p style="font-size:17px; line-height:1.6; background:#ffffff; border:1px solid #cbd5e1; padding:18px; border-radius:8px; margin-bottom:14px;">
+        <em>"PIHAK KEDUA (Perusahaan Alih Daya) berkewajiban mendaftarkan dan mencatatkan Perjanjian Kerja Sama ini kepada Dinas Tenaga Kerja Kabupaten/Kota setempat dalam tenggat waktu paling lambat 3 (tiga) hari kerja sejak perjanjian ini ditandatangani sebagaimana dimandatkan dalam Pasal 6 ayat (1) Permenaker No. 7 Tahun 2026. Kelalaian atas pencatatan ini memberikan hak seketika bagi PIHAK PERTAMA untuk menunda pembayaran tagihan invoice bulanan atau membatalkan perjanjian secara sepihak tanpa ganti rugi."</em>
+      </p>
+      <p style="font-size:15px; color:#475569;">
+        Klausul ini menjamin pabrik User terlindungi dari sanksi administratif pembatasan kapasitas produksi yang dijatuhkan pegawai pengawas.
+      </p>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 46 / 55</span>
+</div>
+
+<!-- SLIDE 47: LAMPIRAN 4 - SOP PENANGANAN NOTA PENGAWAS -->
+<div class="slide-container" id="slide47">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 4: Protokol Mitigasi Sengketa</div>
+    <h2 class="slide-title">SOP Mitigasi Pemeriksaan Pengawas Ketenagakerjaan</h2>
+  </div>
+  <div class="content-area">
+    <div class="timeline-row">
+      <div class="timeline-step">
+        <div class="step-circle">Tahap 1</div>
+        <div class="step-content">
+          <h4>Verifikasi Identitas</h4>
+          <p>Periksa keabsahan surat tugas resmi pengawas Kemenaker/Disnaker.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Tahap 2</div>
+        <div class="step-content">
+          <h4>Pendampingan Tim</h4>
+          <p>Legal & HR pabrik mendampingi inspeksi agar terarah pada objek penunjang.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Tahap 3</div>
+        <div class="step-content">
+          <h4>Sajikan Kontrak B2B</h4>
+          <p>Tunjukkan kontrak alih daya berbasis SLA keluaran jasa penunjang sah.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle" style="background:#059669;">Tahap 4</div>
+        <div class="step-content">
+          <h4>Tanggapi BAP</h4>
+          <p>Berikan hak jawab tertulis dalam waktu 7 hari kerja sebelum nota terbit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 47 / 55</span>
+</div>
+
+<!-- SLIDE 48: LAMPIRAN 5 - PEDOMAN KLAUSUL TUPE DALAM PKWT -->
+<div class="slide-container" id="slide48">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 5: Klausul Kontrak Pekerja</div>
+    <h2 class="slide-title">Panduan Klausul TUPE dalam Kontrak Kerja Vendor</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item">
+        <h3><i class="fa-solid fa-pen-nib" style="color:#0284c7;"></i> Formulasi Klausul Alih Perlindungan</h3>
+        <p style="font-size:16px; line-height:1.6; background:#ffffff; border:1px solid #cbd5e1; padding:16px; border-radius:8px; margin-bottom:12px;">
+          <em>"Dalam hal masa berlaku perjanjian antara Perusahaan Alih Daya dengan Pengguna Jasa berakhir dan digantikan oleh Perusahaan Alih Daya lain, maka hubungan kerja Pekerja/Buruh dialihkan ke Perusahaan Alih Daya pengganti dengan memperhitungkan seluruh masa kerja yang telah dilalui secara kumulatif."</em>
+        </p>
+        <p style="font-size:15px; color:#64748b;">
+          Klausul ini wajib tertulis dalam PKWT buruh guna memenuhi syarat legalitas Pasal 82 ayat (3) RUU.
+        </p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-circle-check" style="color:#059669;"></i> Dampak Positif bagi Perusahaan</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-check"></i> Menghilangkan sengketa pesangon PHK saat tender vendor berganti.</li>
+          <li><i class="fa-solid fa-check"></i> Menjaga kontinuitas kebersihan dan keamanan fasilitas pabrik.</li>
+          <li><i class="fa-solid fa-check"></i> Menjamin kepatuhan mutlak terhadap norma perlindungan RUU.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 48 / 55</span>
+</div>
+
+<!-- SLIDE 49: LAMPIRAN 6 - CHECKLIST CORE VS NON-CORE PABRIK -->
+<div class="slide-container" id="slide49">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 6: Audit Operasional Lantai Pabrik</div>
+    <h2 class="slide-title">Checklist Verifikasi Core vs Non-Core Pabrik</h2>
+  </div>
+  <div class="content-area">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pertanyaan Evaluasi Operasional</th>
+            <th>Jawaban "YA"</th>
+            <th>Jawaban "TIDAK"</th>
+            <th>Tindakan Manajemen Pabrik</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apakah pekerjaan berhubungan dengan mesin pemrosesan produk?</td>
+            <td><strong>Core</strong></td>
+            <td>Non-Core</td>
+            <td>Wajib Insourcing (Karyawan Pabrik)</td>
+          </tr>
+          <tr>
+            <td>Jika pekerjaan dihentikan, aliran output pabrik seketika terhenti?</td>
+            <td><strong>Core</strong></td>
+            <td>Non-Core</td>
+            <td>Dilarang menggunakan vendor alih daya</td>
+          </tr>
+          <tr>
+            <td>Apakah posisi masuk dalam 5 rumpun jasa penunjang legal?</td>
+            <td><strong>Sah</strong></td>
+            <td>Ilegal</td>
+            <td>Boleh dialihdayakan ke vendor berizin</td>
+          </tr>
+          <tr>
+            <td>Apakah supervisor pabrik User memberi perintah teknis langsung?</td>
+            <td><strong>Risiko</strong></td>
+            <td>Aman</td>
+            <td>Alihkan instruksi via koordinator vendor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 49 / 55</span>
+</div>
+
+<!-- SLIDE 50: LAMPIRAN 7 - PANDUAN PENYUSUNAN SLA BERBASIS OUTPUT -->
+<div class="slide-container" id="slide50">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 7: Standar Kontrak Modern</div>
+    <h2 class="slide-title">Panduan Service Level Agreement (SLA) Berbasis Output</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item accent-red">
+        <h3><i class="fa-solid fa-xmark" style="color:#e11d48;"></i> Hindari Skema Man-Days / Jam Kerja</h3>
+        <p>
+          Membayar vendor alih daya berdasarkan jumlah kehadiran orang per hari (*man-hour/man-days*) membuktikan di hadapan hakim bahwa User menyewa buruh, bukan membeli hasil jasa pekerjaan penunjang!
+        </p>
+      </div>
+      <div class="card-item accent-emerald">
+        <h3><i class="fa-solid fa-check" style="color:#059669;"></i> Terapkan Skema Output-Based SLA</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Cleaning:</strong> Standar m² lantai bersih dan frekuensi sanitasi terjadwal.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Catering:</strong> Ketepatan porsi makan shift dan uji higienitas laboratorium.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Security:</strong> Nihil insiden pelanggaran perimeter dan kepatuhan patroli barcode.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 50 / 55</span>
+</div>
+
+<!-- SLIDE 51: LAMPIRAN 8 - ALUR ESKALASI BIPARTIT PABRIK -->
+<div class="slide-container" id="slide51">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 8: Manajemen Konflik Internal</div>
+    <h2 class="slide-title">Alur Eskalasi Bipartit Terkait Alih Status Pekerja</h2>
+  </div>
+  <div class="content-area">
+    <div class="timeline-row">
+      <div class="timeline-step">
+        <div class="step-circle">Hari 1-5</div>
+        <div class="step-content">
+          <h4>Penerimaan Tuntutan</h4>
+          <p>Registrasi resmi surat tuntutan dari perwakilan serikat buruh pabrik.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Hari 6-15</div>
+        <div class="step-content">
+          <h4>Sidang Bipartit I & II</h4>
+          <p>Kajian fakta posisi kerja dengan melibatkan ahli hukum ketenagakerjaan.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Hari 16-25</div>
+        <div class="step-content">
+          <h4>Tawaran Kompromi</h4>
+          <p>Penyusunan opsi transisi penempatan bertahap sesuai kompetensi.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle" style="background:#059669;">Hari 30</div>
+        <div class="step-content">
+          <h4>Perjanjian Bersama</h4>
+          <p>Penandatanganan PB dan pendaftaran resmi ke PHI setempat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 51 / 55</span>
+</div>
+
+<!-- SLIDE 52: LAMPIRAN 9 - MATRIKS DIAGNOSTIK RISIKO HUKUM -->
+<div class="slide-container" id="slide52">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-folder-open"></i> Lampiran 9: Diagnostic Tool</div>
+    <h2 class="slide-title">Matriks Penilaian Risiko Hukum Outsourcing Pabrik</h2>
+  </div>
+  <div class="content-area">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Indikator Praktik Outsourcing Pabrik</th>
+            <th>Tingkat Risiko</th>
+            <th>Dampak Finansial</th>
+            <th>Langkah Tindakan Segera</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pekerja vendor mengoperasikan mesin produksi utama</td>
+            <td><span style="color:#be123c; font-weight:800;">KRITIS (RED)</span></td>
+            <td>Pengangkatan karyawan tetap + back-pay upah</td>
+            <td>Tarik posisi; jadwalkan program insourcing</td>
+          </tr>
+          <tr>
+            <td>Vendor alih daya tidak memiliki izin OSS Kemenaker</td>
+            <td><span style="color:#be123c; font-weight:800;">TINGGI (RED)</span></td>
+            <td>User memikul tanggung renteng denda pidana</td>
+            <td>Putus kontrak; lakukan tender ulang vendor berizin</td>
+          </tr>
+          <tr>
+            <td>Kontrak belum dicatatkan ke Disnaker (Permenaker 7)</td>
+            <td><span style="color:#d97706; font-weight:800;">SEDANG (AMBER)</span></td>
+            <td>Sanksi peringatan & pembatasan kapasitas</td>
+            <td>Segera laporkan berkas ke Disnaker setempat</td>
+          </tr>
+          <tr>
+            <td>Outsourcing murni jasa satpam & katering ber-SLA</td>
+            <td><span style="color:#059669; font-weight:800;">RENDAH (GREEN)</span></td>
+            <td>Sesuai koridor aman Pasal 80 ayat (3) RUU</td>
+            <td>Pertahankan audit kepatuhan rutin berkala</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 52 / 55</span>
+</div>
+
+<!-- SLIDE 53: ROADMAP KEPATUHAN TRANSISI 2026-2028 -->
+<div class="slide-container" id="slide53">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-road"></i> Rencana Aksi Manajemen</div>
+    <h2 class="slide-title">Roadmap Kepatuhan Alih Daya 2026–2028 (24 Bulan)</h2>
+  </div>
+  <div class="content-area">
+    <div class="timeline-row">
+      <div class="timeline-step">
+        <div class="step-circle">Bln 1-6</div>
+        <div class="step-content">
+          <h4>Audit Total Vendor</h4>
+          <p>Inventarisasi izin PT OSS dan pemetaan alur proses mesin pabrik.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Bln 7-12</div>
+        <div class="step-content">
+          <h4>Amandemen B2B</h4>
+          <p>Adopsi klausul TUPE, SLA output, dan verifikasi pelaporan Disnaker.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle">Bln 13-18</div>
+        <div class="step-content">
+          <h4>Program Insourcing</h4>
+          <p>Konversi operator lini mesin menjadi karyawan tetap pabrik User.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-circle" style="background:#059669;">Bln 19-24</div>
+        <div class="step-content">
+          <h4>Sertifikasi Kepatuhan</h4>
+          <p>Penyelarasan penuh batas waktu Permenaker 7/2026 (30 April 2028).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 53 / 55</span>
+</div>
+
+<!-- SLIDE 54: 7 REKOMENDASI STRATEGIS DIREKSI MANUFAKTUR -->
+<div class="slide-container" id="slide54">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-compass"></i> Arahan Tindakan Direksi</div>
+    <h2 class="slide-title">7 Rekomendasi Strategis untuk Direksi Manufaktur</h2>
+  </div>
+  <div class="content-area">
+    <div class="card-row">
+      <div class="card-item" style="flex:1;">
+        <h3><i class="fa-solid fa-shield-halved" style="color:#0284c7;"></i> Kebijakan Ketenagakerjaan</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Hentikan Segera Alih Daya Lini Inti:</strong> Tarik operator mesin produksi utama menjadi PKWTT User.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Gugus Tugas Harmonisasi Regulasi:</strong> Integrasikan Legal, HR, dan Operasional menyelaraskan Permenaker & RUU.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Tertibkan Jalur Komando:</strong> Larang supervisor User memberi teguran langsung kepada buruh vendor.</li>
+        </ul>
+      </div>
+      <div class="card-item accent-emerald" style="flex:1;">
+        <h3><i class="fa-solid fa-file-signature" style="color:#059669;"></i> Tata Kelola Vendor & B2B</h3>
+        <ul class="styled-list">
+          <li><i class="fa-solid fa-check"></i> <strong>Amandemen Kontrak B2B:</strong> Masukkan klausul ganti rugi penuh (*indemnity*) dan klausul TUPE.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Kepatuhan Lapor H+3 Disnaker:</strong> Pantau bukti pencatatan berkas kontrak alih daya vendor.</li>
+          <li><i class="fa-solid fa-check"></i> <strong>Terapkan Output-Based SLA:</strong> Hapus pembayaran berbasis hari orang (*man-days*).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="slide-footer">Slide 54 / 55</span>
+</div>
+
+<!-- SLIDE 55: KESIMPULAN EKSEKUTIF & PENUTUP -->
+<div class="slide-container" id="slide55">
+  <div class="slide-header">
+    <div class="eyebrow"><i class="fa-solid fa-flag-checkered"></i> Kesimpulan Eksekutif</div>
+    <h2 class="slide-title">Kepatuhan Hukum adalah Keunggulan Kompetitif</h2>
+  </div>
+  <div class="content-area" style="text-align:center; align-items:center;">
+    <div style="background:linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border:2px solid #bae6fd; border-radius:16px; padding:36px 40px; max-width:1050px; margin-bottom:20px;">
+      <h3 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:26px; color:#0369a1; margin-bottom:12px;">
+        Transformasi Paradigma: Dari "Biaya Fleksibilitas" Menuju "Kemitraan Berkelanjutan"
+      </h3>
+      <p style="font-size:18px; color:#334155; line-height:1.6;">
+        Konvergensi antara Permenaker No. 7 Tahun 2026 dan RUU Pelindungan Ketenagakerjaan menandai berakhirnya era alih daya murah di lantai pabrik manufaktur. Perusahaan yang proaktif melakukan insourcing lini inti dan menata alih daya penunjang secara legal akan menikmati stabilitas produktivitas, terhindar dari sanksi eksekutorial Pengadilan Negeri, dan memenuhi standar kepatuhan rantai pasok global.
+      </p>
+    </div>
+    <div style="font-size:16px; font-weight:700; color:#0f172a;">
+      <i class="fa-solid fa-scale-balanced" style="color:#0284c7; margin-right:8px;"></i> Presentasi Eksekutif Selesai • 55 Slide Komprehensif Disiapkan untuk Dewan Direksi & Manajemen
+    </div>
+  </div>
+  <span class="slide-footer">Slide 55 / 55</span>
+</div>
+
+<div class="slide-container slide-attributions" id="slide-attributions-1">
+  <div class="attribution-safe-zone">
+    <h2 class="slide-title">Sumber Dokumentasi & Referensi Gambar</h2>
+    <div class="content-area">
+      <ul class="attribution-list">
+        <li class="attribution-list__item">
+          <div class="attribution__thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqNyuowYMG6jh5S2ZrQmiZ8BnS2pY4r7199etSBZbKejWkpV5mfxKI-8-UT2T" alt="Mahkamah Konstitusi RI"></div>
+          <div class="attribution__details">
+            <p style="font-weight:700; font-size:15px; margin:0;">Gedung Mahkamah Konstitusi Republik Indonesia</p>
+            <p style="font-size:13px; color:#64748b; margin:2px 0 0 0;">Putusan MK No. 168/PUU-XXI/2023 - geopolstratindo.com</p>
+          </div>
+        </li>
+        <li class="attribution-list__item">
+          <div class="attribution__thumbnail"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBDWFDWlmR8azrj9NaDJjqDQ9Hn2lj3WwuVHKRykqXXRYR1Cp0RO0kQTypTaUf" alt="Lini Mesin Pabrik Manufaktur"></div>
+          <div class="attribution__details">
+            <p style="font-weight:700; font-size:15px; margin:0;">Operator Lini Mesin dan Produksi Industri</p>
+            <p style="font-size:13px; color:#64748b; margin:2px 0 0 0;">Industrial vocational training & machinery - wirtgen-group.com</p>
+          </div>
+        </li>
+        <li class="attribution-list__item">
+          <div class="attribution__thumbnail"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOlroYZ8-mCHAnJD9kerUIY-CJHDpRc_Um6Xlisn7jx05n7zCeAb_RDraac-7Q" alt="Supervisi Manajemen Pabrik"></div>
+          <div class="attribution__details">
+            <p style="font-weight:700; font-size:15px; margin:0;">Manajemen Pabrik & Evaluasi Kinerja Ketenagakerjaan</p>
+            <p style="font-size:13px; color:#64748b; margin:2px 0 0 0;">Diverse engineers & partner evaluation - magnific.com</p>
+          </div>
+        </li>
+        <li class="attribution-list__item">
+          <div class="attribution__thumbnail"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9kF1XiL02bG4PtPvokWzVuKnama-uSnZX7utvVsJcgqNOsfI3xyOAzLMQ_Vgu" alt="Inspeksi K3 dan Keselamatan Pabrik"></div>
+          <div class="attribution__details">
+            <p style="font-weight:700; font-size:15px; margin:0;">Inspeksi Standar Keselamatan dan Kesehatan Kerja (K3)</p>
+            <p style="font-size:13px; color:#64748b; margin:2px 0 0 0;">Occupational Safety and Health Academy - occupationalsafetyacademy.com</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
